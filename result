@@ -1,0 +1,78 @@
+=== Basic Astrology Status Counts ===
+
+UCB (Berkeley id or email?):
+  Id: 176
+  Email: 67
+  Didn'T Apply: 34
+
+UCSD (Is your UCSD #3 prestige banner there?):
+  No: 142
+  Yes: 106
+  Didn'T Apply: 29
+
+UCI (Can you log in to the UCI link?):
+  Yes: 116
+  No: 86
+  Didn'T Apply: 75
+
+=======================================================
+
+[UC Berkeley] Good Omen = 'Id' (N=176) | Bad Omen = 'Email' (N=67)
+Metric   | Mean(G)  | Mean(B)  | Diff    | P-Val  | Cohen_d  | Bayes(G>B) | PSM_Diff
+-------------------------------------------------------------------------------------
+GPA_UW   | 3.899    | 3.828    | +0.071  | 0.1880 | 0.267    |    90.8% | +0.101
+GPA_W    | 4.426    | 4.241    | +0.185  | 0.0139 | 0.440    |    99.4% | +0.094
+PIQ      | 7.449    | 7.493    | -0.044  | 0.8106 | -0.032   |    40.6% | N/A
+EC       | 7.318    | 7.239    | +0.079  | 0.7264 | 0.050    |    63.8% | N/A
+
+
+[UC San Diego] Good Omen = 'No' (N=142) | Bad Omen = 'Yes' (N=106)
+Metric   | Mean(G)  | Mean(B)  | Diff    | P-Val  | Cohen_d  | Bayes(G>B) | PSM_Diff
+-------------------------------------------------------------------------------------
+GPA_UW   | 3.913    | 3.812    | +0.102  | 0.0143 | 0.354    |    99.3% | +0.063
+GPA_W    | 4.426    | 4.283    | +0.142  | 0.0201 | 0.321    |    99.1% | +0.133
+PIQ      | 7.359    | 7.368    | -0.009  | 0.9631 | -0.006   |    48.0% | N/A
+EC       | 7.282    | 7.066    | +0.216  | 0.3174 | 0.132    |    84.2% | N/A
+
+
+[UC Irvine] Good Omen = 'Yes' (N=116) | Bad Omen = 'No' (N=86)
+Metric   | Mean(G)  | Mean(B)  | Diff    | P-Val  | Cohen_d  | Bayes(G>B) | PSM_Diff
+-------------------------------------------------------------------------------------
+GPA_UW   | 3.900    | 3.805    | +0.095  | 0.0587 | 0.303    |    97.1% | +0.066
+GPA_W    | 4.405    | 4.283    | +0.123  | 0.0795 | 0.263    |    96.2% | +0.099
+PIQ      | 7.405    | 7.384    | +0.021  | 0.9128 | 0.015    |    54.2% | N/A
+EC       | 7.190    | 7.035    | +0.155  | 0.5157 | 0.095    |    74.0% | N/A
+
+
+C:\Users\billy\anaconda3\python.exe C:\Users\billy\PycharmProjects\PortalAstroAnalysis\expectation.py
+=== Expected vs. Actual Astrology Analysis ===
+Model: AP Stats Bayesian Model (Normal Distributions)
+Method: P(Admit|GPA) = P(Admit) * P(GPA|Admit) / P(GPA)
+---------------------------------------------------------------------------
+[UC Berkeley] AP Stats Pool | Mean=3.972, Std=0.432 | N=118869
+[UC Berkeley] Validation Results
+  Valid Applicants   : 243
+  Expected Admits    : 81.14
+  Actual Astrology   : 176 (Omen: 'Id')
+  Difference         : +94.86 (Ratio: 2.17x)
+---------------------------------------------------------------------------
+Saved scored file: berkeley_scored_ap_stats.csv
+---------------------------------------------------------------------------
+[UC San Diego] AP Stats Pool | Mean=3.901, Std=0.495 | N=129373
+[UC San Diego] Validation Results
+  Valid Applicants   : 248
+  Expected Admits    : 136.04
+  Actual Astrology   : 142 (Omen: 'No')
+  Difference         : +5.96 (Ratio: 1.04x)
+---------------------------------------------------------------------------
+Saved scored file: ucsd_scored_ap_stats.csv
+---------------------------------------------------------------------------
+[UC Irvine] AP Stats Pool | Mean=3.872, Std=0.514 | N=118252
+[UC Irvine] Validation Results
+  Valid Applicants   : 202
+  Expected Admits    : 121.11
+  Actual Astrology   : 116 (Omen: 'Yes')
+  Difference         : -5.11 (Ratio: 0.96x)
+---------------------------------------------------------------------------
+Saved scored file: uci_scored_ap_stats.csv
+---------------------------------------------------------------------------

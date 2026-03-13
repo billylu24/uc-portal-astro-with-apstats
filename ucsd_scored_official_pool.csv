@@ -1,0 +1,249 @@
+Timestamp,Berkeley id or email?,Is your UCSD #3 prestige banner there?,Can you log in to the UCI link?,Did you apply for financial aid?,GPA(UC UW)?,GPA(UC W),GPA(UC W capped),Rate your piqs on a scale of 1-10,Rate your ec's on a scale of 1-10,UCB major?,UCSD major?,UCI major?,Best college you've already gotten accepted to(not required),UCB major? (AI Categorized),UCSD major? (AI Categorized),UCI major? (AI Categorized),Expected_Prob
+3/8/2026 10:55:51,Id,No,Yes,Yes,4.0,4.31,,7,7,Chemistry,Chemistry,Chemistry,,Life Sciences,Life Sciences,Life Sciences,0.0
+3/8/2026 10:56:01,Id,Yes,Yes,Yes,3.86,4.14,4.34,7,5,Bioengineering,Bioengineering,Biomedical Engineering,UC Berkeley,Engineering,Engineering,Engineering,0.353772970860224
+3/8/2026 10:57:21,Id,Yes,Yes,Yes,3.6,4.2,3.9,8,8,Applied Math,Applied Math,Computational Math,Hong Kong University,Physical Sciences/Math,Physical Sciences/Math,Computer Science,0.20006269979319496
+3/8/2026 10:57:47,Email,No,No,Yes,3.88,4.38,4.21,7,8,applied math,ICAM,applied math,,Physical Sciences/Math,Other/Interdisciplinary,Physical Sciences/Math,0.4733943701387191
+3/8/2026 11:03:10,Email,No,No,Yes,4.0,4.4,4.3,8,8,EECS,ECE,Comp eng,,Engineering,Engineering,Engineering,0.3140453012947944
+3/8/2026 11:06:53,Email,No,Yes,Yes,4.0,4.6,4.31,8,9,Data Science,CS,CS,,Computer Science,Computer Science,Computer Science,0.36032210865080866
+3/8/2026 11:07:09,Id,No,Yes,No,4.0,4.91,4.33,8,6,Chemical biology,Biochem,Biological sciences,,Life Sciences,Life Sciences,Life Sciences,0.5647253374659785
+3/8/2026 11:07:56,Email,Yes,No,No,3.92,4.24,4.24,7,8,Molecular and Cell Biology,Biochemistry,Biological Sciences,,Life Sciences,Life Sciences,Life Sciences,0.45989786464805577
+3/8/2026 11:08:45,Email,Yes,No,No,3.83,4.3,4.18,9,7,Cognitive Science,Cognitive Science,Cognitive Science,,Other/Interdisciplinary,Other/Interdisciplinary,Other/Interdisciplinary,0.44376898156090233
+3/8/2026 11:09:38,Id,No,Yes,Yes,4.0,4.5,4.3,8,7,Astrophysics,Astrophysics,Physics,,Physical Sciences/Math,Physical Sciences/Math,Physical Sciences/Math,0.627904061956609
+3/8/2026 11:10:43,Id,No,Yes,Yes,4.0,4.78,4.32,9,8,mcdb,human bio,bio sci,ucd,Life Sciences,Life Sciences,Life Sciences,0.5531908638671883
+3/8/2026 11:14:16,Id,Yes,No,No,4.0,4.5,4.33,7,7,Electrical and Computer Engineering,Electrical Engineering,Electrical Engineering,,Engineering,Engineering,Engineering,0.34362299634432036
+3/8/2026 11:15:04,Id,Yes,Yes,Yes,3.92,4.25,4.25,6,6,Mechancial Engineering,Mechanical Engineering,Mechanical Engineering,San Diego State University,Engineering,Engineering,Engineering,0.26800895312630063
+3/8/2026 11:15:07,Id,No,Didn't apply,No,4.0,4.47,4.27,7,9,Political Science,Public Policy,,Babson Presidential Scholarship,Social Sciences,Public Admin,,0.0
+3/8/2026 11:18:06,Id,No,Yes,No,4.0,4.77,4.35,7,8,ME,ME,ME,,Engineering,Engineering,Engineering,0.36405646762934035
+3/8/2026 11:18:34,Id,Yes,Yes,Yes,3.9,4.57,4.23,8,6,Economics,Business Economics,Economics,University of Washington,Public Admin,Business,Public Admin,0.3516149520738399
+3/8/2026 11:18:45,Id,Yes,Yes,Yes,3.9,4.3,4.3,7,9,Civil Engineering,Aerospace Engineering,Aerospace Engineering,Northeastern University,Engineering,Engineering,Engineering,0.3140453012947944
+3/8/2026 11:21:49,Didn't apply,Yes,Didn't apply,No,3.78,4.25,4.04,9,7,Na,Anthropology,Na,"UCD, Tamu engineering, sdsu",Other/Interdisciplinary,Arts & Humanities,Other/Interdisciplinary,0.3741340109595275
+3/8/2026 11:23:38,Id,Yes,Yes,Yes,4.0,5.0,4.3,8,8,data science,cs w/ specialization in bioinformatics,data science,case western reserve university (~32% acceptance rate),Computer Science,Life Sciences,Computer Science,0.5299616155001501
+3/8/2026 11:23:47,Id,Yes,Yes,Yes,4.0,4.56,4.28,7,7,Mechanical engineering,mechanical engineering,mechanical engineering,purdue,Engineering,Engineering,Engineering,0.2951162054599615
+3/8/2026 11:24:00,Id,Yes,Yes,No,3.7,3.7,4.0,8,5,global relations,international buissness,finance,tulane ea,Other/Interdisciplinary,Business,Business,0.16402991558199656
+3/8/2026 11:24:19,Id,Yes,No,Yes,3.93,4.59,4.19,8,7,Statistics,Data Science,Data Science,UIUC,Life Sciences,Computer Science,Computer Science,0.24697144567934518
+3/8/2026 11:24:25,Email,Yes,Yes,Yes,3.88,4.41,4.17,7,8,Chemistry B.S.,Chemistry B.S.,Chemistry B.S.,,Life Sciences,Life Sciences,Life Sciences,0.3802968233285615
+3/8/2026 11:27:28,Id,No,No,Yes,3.88,4.28,4.19,8,8,Undeclared life sciences,Global health,Public health,SDSU,Life Sciences,Public Health,Public Health,0.2455715202372616
+3/8/2026 11:27:37,Id,No,No,No,3.96,4.58,4.29,7,8,bio,bio,bio,uc davis,Life Sciences,Life Sciences,Life Sciences,0.5182917194350489
+3/8/2026 11:28:33,Email,Yes,No,Yes,4.0,4.167,4.25,8,1,undeclared,CompSci/Undeclared,CompSci/Undeclared,SDSU/UCR (CompSci),Undeclared,Computer Science,Computer Science,0.3006092395841383
+3/8/2026 11:30:13,Didn't apply,No,Yes,Yes,3.78,4.38,4.03,8,8,Didn’t apply,Nano engineering,Chemical engineering,Csulb ( the hard ones haven’t came up yet),Other/Interdisciplinary,Engineering,Engineering,0.12046527233981645
+3/8/2026 11:30:29,Id,No,Yes,Yes,4.0,4.5,4.3,7,5,ECE,ECE,Computer Engineering,,Engineering,Engineering,Engineering,0.3140453012947944
+3/8/2026 11:30:33,Id,Yes,Yes,Yes,3.84,4.4,4.16,7,7,Applied Math,Data Science,Applied Math,,Physical Sciences/Math,Computer Science,Physical Sciences/Math,0.2226921010308714
+3/8/2026 11:31:07,Id,No,No,No,3.95,4.38,4.26,8,7,Bio,Bio,Bio,,Life Sciences,Life Sciences,Life Sciences,0.4832131915894524
+3/8/2026 11:31:43,Email,Yes,No,Yes,3.6,3.96,3.92,8,7,Aerospace Engineering,Aerospace Engineering,Aerospace Engineering,,Engineering,Engineering,Engineering,0.07729549566394955
+3/8/2026 11:32:31,Didn't apply,Yes,Didn't apply,Yes,4.0,4.9,4.9,10,8,Aerospace,Aerospace,AE,u of wash,Engineering,Engineering,Architecture,0.41718810989371197
+3/8/2026 11:32:54,Id,No,Didn't apply,Yes,3.95,4.3,4.5,8,6,History,Theater,,Occidental,Arts & Humanities,Arts & Humanities,,0.6721209991221185
+3/8/2026 11:34:11,Id,No,No,Yes,3.91,4.57,4.27,7,8,molecular cell bio,molecular cell bio,biological sciences,,Life Sciences,Life Sciences,Life Sciences,0.4949047251456924
+3/8/2026 11:34:14,Id,No,Yes,Yes,3.78,4.37,4.0,8,6,BS Chemistry in College of Chemistry,Environmental Chemistry,Environmental Science and Policy,University of Michigan LSA,Life Sciences,Life Sciences,Life Sciences,0.2169159592381498
+3/8/2026 11:35:07,Email,Yes,No,No,3.8,4.29,4.13,8,4,Undeclared - humanities,Undeclared - humanities,Undeclared - humanities,UC Davis,Arts & Humanities,Arts & Humanities,Arts & Humanities,0.44857171461774864
+3/8/2026 11:36:24,Email,No,No,No,4.0,4.0,4.0,7,8,Electrical engineering,Electrical engineering,Electrical engineering,,Engineering,Engineering,Engineering,0.10696580518437822
+3/8/2026 11:36:51,Email,No,Didn't apply,Yes,4.0,4.9,4.7,7,7,environmental engineering,environmental engineering,,ucsb (reception),Engineering,Engineering,,0.41718810989371197
+3/8/2026 11:38:04,Id,No,Yes,No,4.0,4.93,4.27,8,8,Bioengineering,Computer Science,Computer Science and Engineering,,Engineering,Computer Science,Engineering,0.3198949975566073
+3/8/2026 11:38:27,Id,No,No,Yes,4.0,4.5,4.29,7,5,Conservation and Resource Studies,Marine Biology (Scripps),Environmental Science/Ecology,University of Florida,Other/Interdisciplinary,Life Sciences,Life Sciences,0.5182917194350489
+3/8/2026 11:39:03,Id,Yes,No,Yes,4.0,4.6,4.4,10,8,Mcb,Biochemistry,Biochemistry,UC Berkeley Early admit,Other/Interdisciplinary,Life Sciences,Life Sciences,0.6428824626791518
+3/8/2026 11:39:12,Id,Yes,No,No,3.88,4.58,4.19,5,6,EECS,EE,EE,,Engineering,Engineering,Engineering,0.21875846217310357
+3/8/2026 11:40:31,Didn't apply,No,Yes,Yes,3.95,4.35,4.35,7,5,Data Science,Biology with Specialization in Bioinformatics,Biological Sciences,University of Rochester,Computer Science,Life Sciences,Life Sciences,0.5875735625150844
+3/8/2026 11:40:47,Id,No,Yes,No,3.93,4.62,4.16,7,7,EECS,CS plus Bioinformatics,CS,"UW CS, also UCSB Chancellors",Engineering,Life Sciences,Computer Science,0.3693330196069292
+3/8/2026 11:41:10,Id,Yes,Yes,Yes,4.0,4.6,4.36,7,8,Molecular biology,Bioengineering,Biomedical engineering,"University of Washington, University of Toronto",Life Sciences,Engineering,Engineering,0.37446567142910464
+3/8/2026 11:59:32,Didn't apply,Yes,Didn't apply,Yes,4.0,4.91,4.36,4,4,,Astronomy & Astrophysics,,MIT (Not attending....),,Physical Sciences/Math,,0.6920256238618246
+3/8/2026 11:44:10,Id,No,No,Yes,3.98,4.51,4.2,8,7,Integrative Biology,Human Biology,Biological Sciences,LMU,Life Sciences,Life Sciences,Life Sciences,0.4138877482681913
+3/8/2026 11:44:37,Email,No,Didn't apply,No,4.0,4.78,4.2,6,5,Mechanical Engineering,Mech E/History alt,,Purdue or UDUB (for MechE),Engineering,Other/Interdisciplinary,,0.46348795380612023
+3/8/2026 11:45:18,Id,No,Yes,No,4.0,4.6,4.5,7,7,japanese,business economics,business economics,usc (ea),Other/Interdisciplinary,Business,Business,0.5348058553497824
+3/8/2026 11:45:20,Id,Yes,Yes,No,3.98,4.7,4.14,8,8,Industrial Engineering,Computer Science,Computer Science,UIUC CS,Engineering,Computer Science,Computer Science,0.2074787423113964
+3/8/2026 11:47:46,Id,No,Yes,Yes,3.95,4.6,4.25,9,6,Chemical Engineering,Chemical Engineering,Chemical Engineering,,Engineering,Engineering,Engineering,0.26800895312630063
+3/8/2026 11:49:12,Id,Yes,Yes,No,3.96,4.8,4.12,9,10,EECS,CS,CS,,Engineering,Computer Science,Computer Science,0.19304657858941007
+3/8/2026 11:50:16,Id,No,Yes,Yes,4.0,4.84,4.2,8,8,MET/Engineering Undeclared,CSE - AI/Engineering: Electrical Engineering & Society,Computer Science,"USC, UIUC Eng. Undeclared, UCSC, Smith likely, UW Seattle CS",Engineering,Other/Interdisciplinary,Computer Science,0.46348795380612023
+3/8/2026 11:50:35,Id,No,Yes,Yes,4.0,4.44,4.0,7,7,Global Management,Computer Science,Business Information Management,Northeastern (ea) UIUC (rd),Business,Computer Science,Business,0.12226021501823539
+3/8/2026 11:50:39,Id,No,No,Yes,3.9,4.44,4.25,7,7,MCB,Bioengineering,Biomedical engineering,UIUC/UC Davis (US) University of Toronto International,Life Sciences,Engineering,Engineering,0.26800895312630063
+3/8/2026 11:51:45,Id,No,No,Yes,4.0,4.57,4.18,7,8,ECE,EE,EE,Umich,Engineering,Engineering,Engineering,0.2112160568175711
+3/8/2026 11:51:59,Id,Yes,Didn't apply,No,3.9,4.48,4.29,8,7,EECS,ECE,,UMichigan for CS,Engineering,Engineering,,0.30449806684591324
+3/8/2026 11:54:50,Id,Yes,No,No,4.0,4.46,4.31,9,7,Civil Engineering,Mechanical Engineering,Civil Engineering,"UC Davis, Civil Engineering (only applied UCs and CSUs)",Engineering,Engineering,Engineering,0.3237525366954039
+3/8/2026 11:56:23,Id,No,Didn't apply,No,4.0,4.4,4.3,6,7,Economics,Economics + Mathematics,,UMich,Public Admin,Other/Interdisciplinary,,0.5625570483435849
+3/8/2026 11:57:09,Id,No,No,No,4.0,4.48,4.29,8,9,Economics,Business Economics,Business Admin,Kelley,Public Admin,Business,Business,0.4141709793354317
+3/8/2026 11:58:28,Email,Yes,No,Yes,3.7,4.27,3.97,8,8,Chemistry,Pharmacological Chemistry,Pharmaceutical Sciences,Udub,Life Sciences,Life Sciences,Life Sciences,0.19401931646579187
+3/8/2026 11:59:07,Id,No,Yes,No,3.0,3.02,3.02,10,10,molecular and cell bio,public health and med sciences,archi and enviro design and planning,,Life Sciences,Public Health,Architecture,0.01046304613252761
+3/8/2026 11:59:21,Id,Yes,Yes,Yes,3.95,4.45,4.19,6,5,Applied Math,Math-CS,Mathematics of Computation,Washington ACMS/Purdue CS,Physical Sciences/Math,Physical Sciences/Math,Physical Sciences/Math,0.4995556658063563
+3/8/2026 11:59:24,Id,No,Yes,No,4.0,4.6,4.3,9,8,EECS,CS,CS,UCB,Engineering,Computer Science,Computer Science,0.35000018823470336
+3/8/2026 12:02:24,Id,Yes,Didn't apply,No,4.0,4.6,4.25,9,9,Environmental eng,Marine biology,N/a,Harvard,Engineering,Life Sciences,Other/Interdisciplinary,0.4715400068796642
+3/8/2026 12:02:45,Email,No,Didn't apply,Yes,3.88,4.25,4.08,8,8,Data science,Statistics and probability,,UIUC,Computer Science,Life Sciences,,0.28712168409252237
+3/8/2026 12:04:05,Id,No,Yes,Yes,4.0,4.8,4.36,6,6,Chemical Biology,Biochemistry,Biological Sciences,,Life Sciences,Life Sciences,Life Sciences,0.5988640634353131
+3/8/2026 12:05:37,Didn't apply,Yes,Yes,Yes,4.0,4.42,4.33,8,7,,Business Economics,Business Administration,"got accepted to CSULB, UCR, UCM, UCSC",,Business,Business,0.4576145207959559
+3/8/2026 12:07:09,Id,No,Yes,Yes,3.88,,4.15,8,8,Economics,International Studies - Economics,Economics,,Public Admin,Other/Interdisciplinary,Public Admin,0.4145381403663864
+3/8/2026 12:08:05,Email,Yes,Didn't apply,No,4.0,4.93,4.57,8,8,ECE,ECE,,UIUC EE,Engineering,Engineering,,0.41718810989371197
+3/8/2026 12:09:24,Id,No,No,Yes,3.95,4.52,4.27,8,7,Ancient Greek and Roman studies,Marine bio,Polisci,"UCD, UWM, UW",Arts & Humanities,Life Sciences,Social Sciences,0.4949047251456924
+3/8/2026 12:09:47,Email,Yes,Yes,No,3.93,4.71,4.21,6,6,stats,stats,Data Science,UIUC,Life Sciences,Life Sciences,Computer Science,0.4252822817805496
+3/8/2026 12:10:29,Email,Yes,Yes,Yes,3.93,4.37,4.2,7,6,Political Science,Political Science - Public Policy,Social Policy and Public Service,Uc Davis,Social Sciences,Social Sciences,Social Sciences,0.37973620729472624
+3/8/2026 12:10:43,Id,No,No,No,3.9,4.33,4.27,9,7,linguistics,linguistics,linguistics,"uiuc honors, uw&m, uc davis (apparently impressive now lol), uoft, all linguistics",Arts & Humanities,Arts & Humanities,Arts & Humanities,0.5677779049151777
+3/8/2026 12:14:13,Id,No,Yes,Yes,3.93,4.4,4.12,5,6,Philosophy (2nd choice undecided social sciences),Comp Sci (business psych 2nd choice),Psych (2nd choice Game design),Berkeley (got rlly lucky 🥹),Arts & Humanities,Other/Interdisciplinary,Other/Interdisciplinary,0.3858969189990968
+3/8/2026 12:15:39,Id,No,No,Yes,3.95,4.5,4.31,7,5,Political Econ,Econ and Math (Joint major),Business Admin,,Social Sciences,Other/Interdisciplinary,Business,0.5723221321231801
+3/8/2026 12:21:33,Id,No,No,No,3.82,4.6,4.17,7,8,Econ,Business Econ,Business Admin,,Business,Business,Business,0.29376934203981037
+3/8/2026 12:22:43,Id,Yes,No,Yes,3.89,4.43,4.22,7,5,cognitive science,cognitive science,cognitive science,ucsc,Other/Interdisciplinary,Other/Interdisciplinary,Other/Interdisciplinary,0.4833217781612101
+3/8/2026 12:23:59,Id,No,Yes,No,4.0,4.5,4.12,8,8,Data Science,Data Science,Data Science,Gatech CS oos,Computer Science,Computer Science,Computer Science,0.19304657858941007
+3/8/2026 12:24:36,Id,No,Yes,Yes,4.0,4.7,4.32,9,7,ECE,ECE,CSE,Georgia tech compe or umich cs,Engineering,Engineering,Computer Science,0.3336138946966403
+3/8/2026 12:27:10,Id,Yes,No,Yes,3.98,4.29,4.29,6,7,biochem,biochem,chem,,Life Sciences,Life Sciences,Life Sciences,0.5182917194350489
+3/8/2026 12:28:06,Id,Yes,Yes,Yes,3.8,4.4,4.2,5,4,Cognitive Science,Human Developmental Sciences,Public Health Sciences,sdsu,Other/Interdisciplinary,Arts & Humanities,Public Health,0.5082926816963736
+3/8/2026 12:28:43,Id,No,Yes,No,3.9,4.1,4.1,7,10,Undecided,Undecided,Public health,CSULB,Other/Interdisciplinary,Other/Interdisciplinary,Public Health,0.36721958164408725
+3/8/2026 12:28:59,Id,No,Didn't apply,No,3.88,,,8,9,Mechanical Engineering,Mechanical Engineering,-,UW MADISON OR UW SEATTLE,Engineering,Engineering,Undeclared,0.0
+3/8/2026 12:30:51,Id,Yes,No,No,3.49,3.97,3.7,8,10,Native Studies,Anthropology with Concentration in Sociocultural Anthropology,Anthropology,Davis or Northeastern,Other/Interdisciplinary,Arts & Humanities,Arts & Humanities,0.1573106062577761
+3/8/2026 12:31:07,Id,No,Didn't apply,Yes,4.16,4.4,4.16,8,8,Data Science,Buissnes Econ,Didn’t apply,"Santa Clara University, UC Davis",Computer Science,Business,Other/Interdisciplinary,0.28468355172959076
+3/8/2026 12:31:45,Email,Yes,Yes,No,4.0,4.27,4.27,8,8,Undeclared,Undeclared,Undeclared,SDSU,Undeclared,Undeclared,Undeclared,0.5658764705681398
+3/8/2026 12:33:58,Id,Yes,No,Yes,3.93,4.45,4.21,9,10,Electrical Engineering & Computer Science,Electrical and Computer Engineering,Computer Engineering,University of Michigan (EE),Engineering,Engineering,Engineering,0.23441867179533166
+3/8/2026 12:35:11,Id,No,Yes,Yes,3.92,4.23,4.62,7,8,Engineering Mathematics and Statistics,Mathematics - Computer Science,Electrical Engineering,UC Davis,Physical Sciences/Math,Computer Science,Engineering,0.45801947520702363
+3/8/2026 12:36:12,Id,No,Yes,Yes,4.0,4.93,4.3,8,6,Molecular and Cell Biology,Bioengineering,Biomedical Engineering,UC Davis,Life Sciences,Engineering,Engineering,0.3140453012947944
+3/8/2026 12:36:13,Id,No,Didn't apply,No,4.0,4.8,4.27,5,8,Bio,Bio,Bio,"USC (scholarship), UC Davis (honors, no scholarship)",Life Sciences,Life Sciences,Life Sciences,0.4949047251456924
+3/8/2026 12:40:57,Id,Yes,No,Yes,3.93,4.36,4.21,8,7,psych,psych,psych,UCSC,Other/Interdisciplinary,Other/Interdisciplinary,Other/Interdisciplinary,0.4733943701387191
+3/8/2026 12:42:14,Id,No,Yes,Yes,4.0,4.88,4.5,8,7,Genetics and Plant Biology,Environmental Chemistry,Biological Sciences,,Life Sciences,Life Sciences,Life Sciences,0.6428824626791518
+3/8/2026 12:46:27,Id,Yes,No,Yes,3.63,3.92,3.79,7,7,Engineering Undeclared,Mechanical Engineering,Mechanical Engineering,,Engineering,Engineering,Engineering,0.044757568939527405
+3/8/2026 12:43:52,Id,No,Yes,No,4.0,4.67,4.27,8,8,Bioengineering,Bioengineering: biotechnology,Biomedical engineering,UW or UCD,Engineering,Engineering,Engineering,0.28590458041810385
+3/8/2026 12:44:08,Email,Yes,No,No,4.0,4.56,4.33,5,6,Electrical and Computer Engineering,Electrical Engineering,Electrical Engineering,,Engineering,Engineering,Engineering,0.34362299634432036
+3/8/2026 12:46:41,Id,No,No,Yes,4.0,4.69,4.27,8,8,Environmental Engineering,Mechanical Engineering,Civil Engineering,UIUC/Purdue/Davis Mechanical Engineering,Engineering,Engineering,Engineering,0.28590458041810385
+3/8/2026 12:48:01,Id,No,No,Yes,4.0,4.54,4.31,9,8,Civil Engineering,Structural Engineering,Civil Engineering,UIUC engineering,Engineering,Engineering,Engineering,0.3237525366954039
+3/8/2026 12:50:29,Id,Yes,No,Yes,3.87,4.4,4.09,8,6,EECS,CS,CS,,Engineering,Computer Science,Computer Science,0.17285163427431055
+3/8/2026 12:53:07,Id,No,Yes,Yes,4.0,4.69,4.31,9,8,chem e,chem e,chem e,g tech,Engineering,Engineering,Engineering,0.3237525366954039
+3/8/2026 12:54:32,Email,Yes,Yes,Yes,3.95,3.57,3.32,9,7,Undeclared biological science,Neuroscience/ undeclared,Biomedical engineering,UCD,Life Sciences,Life Sciences,Engineering,0.011368268106868959
+3/8/2026 12:57:34,Email,Yes,Yes,Yes,4.0,4.34,4.29,8,8,Aerospace Engineering,Aerospace Engineering,Aerospace Engineering,UIUC,Engineering,Engineering,Engineering,0.30449806684591324
+3/8/2026 12:57:48,Email,Yes,Yes,Yes,3.66,3.9,3.85,8,7,Undeclared science,Undeclared science,Social Ecology,SDSU,Physical Sciences/Math,Physical Sciences/Math,Social Sciences,0.164579038860359
+3/8/2026 12:58:43,Id,Yes,Yes,No,3.91,4.5,4.27,7,5,media studies,media industries and comms,film and digital media,ucsc,Arts & Humanities,Arts & Humanities,Arts & Humanities,0.5677779049151777
+3/8/2026 12:59:18,Didn't apply,Yes,Didn't apply,Yes,3.82,4.11,4.11,7,5,,Political Science,,,,Social Sciences,,0.3104605623641356
+3/8/2026 13:05:21,Email,No,Didn't apply,No,4.0,4.36,4.29,9,7,Civil Engineering,Structural Engineering,,UCSB (I got reception email),Engineering,Engineering,,0.30449806684591324
+3/8/2026 13:08:27,Id,Yes,Yes,Yes,4.0,4.32,4.48,7,6,bioengineering,bioengineering,bioengineering,Northeastern,Life Sciences,Life Sciences,Life Sciences,0.6428824626791518
+3/8/2026 13:11:06,Id,Yes,No,Yes,3.78,4.59,,7,8,Physics,Mechanical Engineering,Mech E,Umd,Physical Sciences/Math,Engineering,Engineering,0.0
+3/8/2026 13:11:14,Email,No,No,Yes,3.9,4.35,4.27,7,4,Chemistry B.A.,Public Health,Chemistry B.S.,San Diego State University,Life Sciences,Public Health,Life Sciences,0.2915131411422408
+3/8/2026 13:12:04,Id,No,Yes,No,4.0,4.0,4.0,5,7,Chemistry,Chemistry,Chemistry,UIUC,Life Sciences,Life Sciences,Life Sciences,0.2169159592381498
+3/8/2026 13:15:15,Id,No,No,No,4.0,4.67,4.33,7,6,Engineering Physics,Electrical Engineering,Electrical Engineering,,Physical Sciences/Math,Engineering,Engineering,0.34362299634432036
+3/8/2026 13:17:30,Email,Yes,Yes,Yes,3.72,4.1,3.92,9,6,Studio Art,Studio Art,Studio Art,"UCSC, UCR, UCM (rejected from UCD)",Arts & Humanities,Arts & Humanities,Arts & Humanities,0.28388039076876387
+3/8/2026 13:24:05,Email,Yes,No,No,4.0,5.0,4.14,8,9,Bioengineering,Bioengineering,Bioengineering,California Institute of Technology,Engineering,Engineering,Engineering,0.182964602511329
+3/8/2026 13:26:08,Id,No,Didn't apply,No,4.0,4.571,4.286,7,7,Mech E,Mech E,,UW probably,Engineering,Engineering,,0.3007251937727193
+3/8/2026 13:30:15,Id,Yes,No,Yes,3.57,4.17,3.91,8,7,COGNITIVE SCIENCE,HUMAN BIOLOGY,COGNITIVE SCIENCES,,Other/Interdisciplinary,Life Sciences,Other/Interdisciplinary,0.15383339555428838
+3/8/2026 13:35:40,Didn't apply,Yes,No,Yes,3.79,4.0,3.86,5,4,why is this required??,Biology,Biology,I applied to nowhere. I'm cooked 😨😨,Other/Interdisciplinary,Life Sciences,Life Sciences,0.12577980581415776
+3/8/2026 13:38:43,Id,Yes,Yes,No,3.83,4.17,4.17,8,9,Econ,Finance,Finance,,Business,Business,Business,0.29376934203981037
+3/8/2026 13:47:37,Email,Yes,Didn't apply,Yes,3.9,4.0,4.1,8,7,Buisness,Idk,none,,Business,Other/Interdisciplinary,Undeclared,0.36721958164408725
+3/8/2026 13:48:47,Id,Yes,Didn't apply,Yes,4.0,4.94,4.19,5,5,Chemistry,Chemistry,------,Stanford,Life Sciences,Life Sciences,Undeclared,0.40258465250521785
+3/8/2026 13:53:18,Didn't apply,Yes,No,No,3.37,4.01,3.52,5,2,n / a,cs,cs,yale (early legacy) .,Other/Interdisciplinary,Computer Science,Computer Science,0.015755967650939135
+3/8/2026 13:54:25,Id,Yes,No,Yes,3.8,4.2,4.4,6,8,media studies,media studies and communication,media studies,,Arts & Humanities,Arts & Humanities,Arts & Humanities,0.6721209991221185
+3/8/2026 13:54:54,Id,No,No,Yes,4.0,4.44,4.22,8,6,Data Science,Data Science,Data Science,"UIUC (Cs & Stats) {this is more selective than cs + x, but less selective than pure cs}",Computer Science,Computer Science,Computer Science,0.2729682996200905
+3/8/2026 13:56:29,Id,No,No,No,3.5,3.54,3.54,10,8,Applied Math,Chemistry,Electrical Engineering,,Physical Sciences/Math,Life Sciences,Engineering,0.03118606924907251
+3/8/2026 13:57:28,Email,No,Yes,Yes,3.83,4.13,3.98,5,6,Political Science,Political Science,Political Science,"UCSC, UCR, UCD",Social Sciences,Social Sciences,Social Sciences,0.2241152942041927
+3/8/2026 13:58:44,Id,No,Yes,Yes,4.0,4.4,4.33,8,8,Molecular and Cell Biology,Human Biology,Biological Sciences,UC Berkeley,Life Sciences,Life Sciences,Life Sciences,0.5647253374659785
+3/8/2026 14:01:31,Id,Yes,No,Yes,4.0,4.99,4.18,8,8,Applied Math,Applied Math,Applied Math,MIT,Physical Sciences/Math,Physical Sciences/Math,Physical Sciences/Math,0.4876260790168993
+3/8/2026 14:01:49,Id,No,Yes,Yes,4.0,5.35,4.62,9,7,"Molecular and Cell Biology, B.A.","Cognitive Science: Cognitive & Behavioral Neuroscience (joint major), B.S.","Cognitive Sciences, B.S. School of Social Sciences",UW,Life Sciences,Life Sciences,Social Sciences,0.6428824626791518
+3/8/2026 14:02:21,Email,Yes,No,Yes,3.61,4.22,3.93,8,9,neuro,neuro,neuro,"Usfca, ucsc, ucr, ucm (rejected from davis)",Life Sciences,Life Sciences,Life Sciences,0.16641309335146043
+3/8/2026 14:05:58,Id,No,Yes,Yes,4.0,4.73,4.27,9,8,"Neuroscience, B.A","Neurobiology, B.S.","Biological Sciences, B.S.",,Life Sciences,Life Sciences,Life Sciences,0.4949047251456924
+3/8/2026 14:06:18,Id,No,Yes,Yes,4.0,4.34,4.18,4,10,Bio,Bio,Bio,Princeton (Restrictive Early Action),Life Sciences,Life Sciences,Life Sciences,0.39138411252588856
+3/8/2026 14:07:18,Didn't apply,No,Yes,Yes,4.0,4.72,4.3,7,8,Interdisciplinary Studies,Human Developmental Sciences,Social Policy & Public Service,UC Davis,Other/Interdisciplinary,Arts & Humanities,Public Admin,0.5927833813207829
+3/8/2026 14:08:25,Id,No,Yes,Yes,3.7,4.16,3.94,7,9,Poli Sci,Poli Sci,Business,Georgetown,Social Sciences,Social Sciences,Business,0.20126277326256398
+3/8/2026 14:08:45,Email,No,No,Yes,3.77,4.25,4.0,8,7,Urban studies,Media industries and communication,Literary journalism,SDSU,Other/Interdisciplinary,Arts & Humanities,Arts & Humanities,0.34266370910715854
+3/8/2026 14:10:24,Id,Yes,Didn't apply,Yes,3.4,3.4,3.4,8,9,chemistry,pharmacological chemistry,N/a,N/a,Life Sciences,Life Sciences,Other/Interdisciplinary,0.016444701670739876
+3/8/2026 14:10:38,Id,No,Yes,Yes,3.99,4.45,4.3,9,6,Anthropology,Anthropology - Sociocultural Anthropology,Anthropology,,Arts & Humanities,Arts & Humanities,Arts & Humanities,0.5927833813207829
+3/8/2026 14:11:03,Id,No,Yes,Yes,4.0,4.67,4.27,9,8,"Neuroscience, B.A.","Neurobiology, B.S.","Neuroscience, B.S.",University of Washington,Life Sciences,Life Sciences,Life Sciences,0.4949047251456924
+3/8/2026 14:11:59,Didn't apply,Yes,Didn't apply,Yes,3.63,3.72,3.72,1,3,//////////////////,chemistry,/////////////////////////////////////////////,NYU ED2 but I'm not going because $$$ 💸💸💸 </3 so free from binding,Undeclared,Life Sciences,Undeclared,0.06953404970381474
+3/8/2026 14:16:07,Id,No,Didn't apply,Yes,4.0,4.24,4.24,8,9,Electrical and Comp Engineering,Electrical and Comp Engineering,,Stanford,Engineering,Engineering,,0.25933215002676335
+3/8/2026 14:18:32,Id,No,Didn't apply,Yes,3.8,4.48,4.12,6,4,Cognitive science,Applied math,,"Yale, UC Berkeley",Social Sciences,Physical Sciences/Math,,0.4168114654677853
+3/8/2026 14:23:35,Id,No,Yes,No,3.91,4.77,4.27,4,8,Computer Science,Computer Science,Computer Science,UMich,Computer Science,Computer Science,Computer Science,0.3198949975566073
+3/8/2026 14:24:15,Email,Yes,Yes,No,3.86,4.29,4.15,8,6,Physics,Physics,Applied physics,UCSB (reception),Physical Sciences/Math,Physical Sciences/Math,Physical Sciences/Math,0.4519757134481576
+3/8/2026 14:28:38,Id,No,No,No,3.88,4.45,4.0,3,3,Finance,Economics,Business,,Business,Public Admin,Business,0.0
+3/8/2026 14:30:38,Email,No,Didn't apply,No,4.0,4.0,4.0,6,8,Mech eng,Mech eng,Na,UIUC,Engineering,Engineering,Other/Interdisciplinary,0.10696580518437822
+3/8/2026 14:43:00,Id,No,No,No,3.7,4.0,4.3,6,8,EEP,Econ,Idk,,Other/Interdisciplinary,Business,Other/Interdisciplinary,0.4249344123467395
+3/8/2026 14:44:02,Id,No,Didn't apply,Yes,3.93,4.5,4.15,5,10,idr,cognitive/behavioral neuroscience,didn't apply,unc (in state),Other/Interdisciplinary,Life Sciences,Undeclared,0.3585024423419934
+3/8/2026 14:49:17,Id,No,Didn't apply,No,4.0,,,9,7,Economics,Urban planning,Economics,Umich Econ,Public Admin,Architecture,Public Admin,0.0
+3/8/2026 14:54:05,Id,Yes,Didn't apply,No,3.73,4.18,4.04,9,9,Data Science,Aerospace Engineering,,Northeastern University,Computer Science,Engineering,,0.12528172922725855
+3/8/2026 14:59:07,Id,Yes,No,Yes,3.85,4.45,4.15,7,5,english,english,english,,Arts & Humanities,Arts & Humanities,Arts & Humanities,0.46555931808514106
+3/8/2026 15:01:51,Didn't apply,Yes,No,No,1.93,2.04,2.04,8,7,d,compeuter sceince,compeuter sceince,,Other/Interdisciplinary,Computer Science,Computer Science,2.0291032401176617e-05
+3/8/2026 15:15:51,Id,Yes,No,No,4.0,4.98,4.15,9,10,Political Science,Public Policy,Business,"Harvard, UCBerk Early, UCDavis, UIUC",Social Sciences,Public Admin,Business,0.0
+3/8/2026 15:16:53,Id,No,Didn't apply,No,4.0,,,8,9,Molecular and Cell Biology,Molecular and Cell Biology,,,Life Sciences,Life Sciences,,0.0
+3/8/2026 15:26:29,Id,No,Didn't apply,Yes,4.0,4.38,4.19,6,7,Political Science,International Relations / Political Science,,,Social Sciences,Social Sciences,,0.37172763098346207
+3/8/2026 15:26:37,Email,Yes,Yes,Yes,3.86,4.14,4.14,8,7,Molecular Cell Biology,Neurobiology,Pharmaceutical Sciences,UC Davis,Life Sciences,Life Sciences,Life Sciences,0.34781430943887814
+3/8/2026 15:26:42,Id,Yes,Yes,No,3.97,4.6,4.3,8,8,cs,cs,cs,,Computer Science,Computer Science,Computer Science,0.35000018823470336
+3/8/2026 15:27:37,Didn't apply,No,Didn't apply,Yes,3.6,4.21,3.81,6,6,I did not apply,Data Science,I did not apply,"CUNYs (Baruch & Hunter), Brandeis",Undeclared,Computer Science,Undeclared,0.05585258179828895
+3/8/2026 15:28:55,Email,Yes,Yes,No,4.0,4.33,4.33,8,8,Applied Math,CS,CSE,,Physical Sciences/Math,Computer Science,Computer Science,0.3813499354384926
+3/8/2026 15:29:02,Id,No,Didn't apply,Yes,3.94,4.74,4.19,7,6,Integrative Biology,General Biology,,UC Davis,Life Sciences,Life Sciences,,0.40258465250521785
+3/8/2026 15:33:03,Didn't apply,Yes,Didn't apply,No,4.0,4.9,4.03,8,8,,CS,,,,Computer Science,,0.13752713046787832
+3/8/2026 15:33:42,Id,No,No,Yes,3.73,4.27,4.04,7,6,Nutrition and Metabolic Biology,Human Biology,Biology,UC Davis,Life Sciences,Life Sciences,Life Sciences,0.2503836260501506
+3/8/2026 15:35:46,Email,Yes,No,No,4.0,4.86,4.86,10,8,biology,biology,biology,umich,Life Sciences,Life Sciences,Life Sciences,0.6428824626791518
+3/8/2026 15:40:04,Id,No,Yes,Yes,4.0,4.99,4.03,9,10,Mechanical Engineering,Applied Math,Electrical Engineering,MIT,Engineering,Physical Sciences/Math,Engineering,0.31746794986725646
+3/8/2026 15:46:35,Id,No,Yes,Yes,3.71,3.86,3.86,6,7,Poli Sci,Poli Sci,Poli Sci,UC Davis,Social Sciences,Social Sciences,Social Sciences,0.16089616051871033
+3/8/2026 15:49:03,Didn't apply,Yes,No,No,4.0,4.09,4.09,4,8,NONE,Biology,Biology,UC Davis,Undeclared,Life Sciences,Life Sciences,0.2967935052797833
+3/8/2026 15:49:33,Email,Yes,Didn't apply,Yes,3.85,4.1,4.05,7,7,Nuclear Engineering,Chemical Engineering,,,Engineering,Engineering,,0.13026223764401793
+3/8/2026 15:53:29,Email,Yes,No,Yes,3.85,4.77,4.15,6,6,Biology,Public Health,Public Health,,Life Sciences,Public Health,Public Health,0.22451690714639555
+3/8/2026 16:07:10,Id,No,No,Yes,4.0,4.4,4.29,9,9,poli sci,poli sci,poli sci,sdsu/uc davis,Social Sciences,Social Sciences,Social Sciences,0.45428575400637383
+3/8/2026 16:20:47,Id,No,No,No,3.98,4.4,4.15,8,8,neuroscience,cognitive science,neuro adjacent (forgot the specifics),note: international student,Life Sciences,Other/Interdisciplinary,Other/Interdisciplinary,0.4145381403663864
+3/8/2026 16:24:29,Email,Yes,No,No,3.74,4.53,3.95,7,9,Data Science,Data Science,Data Science,UC Davis,Computer Science,Computer Science,Computer Science,0.10005996178320865
+3/8/2026 16:35:02,Email,Yes,Yes,Yes,3.87,4.13,4.08,7,7,Enviromental Engineering,Structural Engineering,Enviromental Engineering,UC Davis,Engineering,Engineering,Engineering,0.1462204035602692
+3/8/2026 16:41:42,Email,No,No,No,3.79,4.28,4.03,6,7,Ece,Ee,Ee,,Engineering,Other/Interdisciplinary,Other/Interdisciplinary,0.3051989059394112
+3/8/2026 16:44:21,Id,Yes,Didn't apply,Yes,3.97,3.97,3.97,8,5,Economics,Economics,Economics,,Public Admin,Public Admin,Public Admin,0.0
+3/8/2026 16:46:35,Id,No,Yes,Yes,4.0,4.09,4.09,6,4,Economics,Economics,Economics,University of Notre Dame,Public Admin,Public Admin,Public Admin,0.0
+3/8/2026 16:51:12,Didn't apply,Yes,Yes,No,3.82,4.06,4.0,5,5,N/a,Economics,economics,,Other/Interdisciplinary,Public Admin,Business,0.0
+3/8/2026 16:51:29,Id,No,Yes,Yes,4.0,4.98,4.18,10,10,bioengineering,bioengineering,biology,harvard college,Life Sciences,Life Sciences,Life Sciences,0.39138411252588856
+3/8/2026 16:54:35,Id,Yes,No,Yes,4.0,4.4,4.33,7,3,Economics,Business Economics,Business Admin,UC Davis,Public Admin,Business,Business,0.4576145207959559
+3/8/2026 16:57:47,Id,No,No,No,3.9,4.3,4.4,9,9,Bio,Bio,Bio,,Life Sciences,Life Sciences,Life Sciences,0.6428824626791518
+3/8/2026 16:58:27,Didn't apply,No,Didn't apply,Yes,4.0,4.9,4.1,2,3,-,Mechanical Engineering,-,UMichigan (honestly I'm quite of a dumbass),Undeclared,Engineering,Undeclared,0.15773629183346208
+3/8/2026 17:12:28,Id,No,Yes,Yes,4.0,4.28,4.28,7,4,Statistics,Econ+Math,Math,,Life Sciences,Other/Interdisciplinary,Physical Sciences/Math,0.5428881672590748
+3/8/2026 17:12:33,Id,No,Yes,No,3.88,3.98,3.98,5,5,Computer Science,Computer Science,Computer Science,"Pace University, SUNY Binghamton, SUNY Stony Brook",Computer Science,Computer Science,Computer Science,0.11291129209761074
+3/8/2026 17:14:41,Email,No,No,Yes,3.69,3.72,3.72,8,10,History,Economics,Economics,UCD,Arts & Humanities,Public Admin,Public Admin,0.0
+3/8/2026 17:17:32,Email,Yes,Didn't apply,Yes,3.9,4.25,4.03,7,9,Biology,Bioeng.,,USC,Life Sciences,Life Sciences,,0.241704361148266
+3/8/2026 17:21:48,Id,No,Didn't apply,Yes,3.89,4.63,4.24,9,7,public health,public health,didnt apply,"ut austin, umich, cwru ppsp finalist (40/4400)",Public Health,Public Health,Other/Interdisciplinary,0.2737023707726373
+3/8/2026 17:22:01,Id,No,Yes,Yes,3.9,4.53,4.16,7,9,Chemistry (Letters and Science),Pharmacological Chemistry,Pharmaceutical Sciences,,Life Sciences,Life Sciences,Life Sciences,0.3693330196069292
+3/8/2026 17:24:14,Id,No,Yes,Yes,3.93,3.93,3.93,7,8,math,math,math,,Physical Sciences/Math,Physical Sciences/Math,Physical Sciences/Math,0.2239633774102457
+3/8/2026 17:29:23,Didn't apply,Yes,Didn't apply,Yes,3.72,3.78,3.78,3,4,,Astronomy & Astrophysics,,NONE???? Waitlisted NYU ED1 😭😭,,Physical Sciences/Math,,0.12361387346157797
+3/8/2026 17:29:24,Id,Yes,Yes,No,4.0,4.72,4.22,8,9,met/eecs,comp eng,cse?,uiuc cs oos,Engineering,Engineering,Computer Science,0.24253486655834477
+3/8/2026 17:38:30,Didn't apply,Yes,Didn't apply,Yes,4.0,4.98,4.18,9,10,,Structural Engineering,,MIT // 4% > 28% ; Honestly laughable joke because from what I'm understanding I'm not getting into UCSD,,Engineering,,0.2112160568175711
+3/8/2026 17:44:44,Id,No,Yes,No,4.0,4.02,4.02,9,10,Economics,Economics,Economics,UCD,Public Admin,Public Admin,Public Admin,0.0
+3/8/2026 17:54:04,Didn't apply,No,No,No,3.96,4.26,4.13,7,5,,aerospace,aerospace,"uiuc, purdue",,Engineering,Engineering,0.17637768648814126
+3/8/2026 17:59:49,Email,Yes,Yes,No,4.0,4.27,4.27,7,9,Chemistry,Chemistry,Chemistry,UIUC ChemE,Life Sciences,Life Sciences,Life Sciences,0.4949047251456924
+3/8/2026 18:03:15,Id,Yes,Didn't apply,No,3.8,4.4,4.2,7,8,Mech Eng,Mech Eng,,University College London,Engineering,Engineering,,0.22649286519011944
+3/8/2026 18:06:38,Id,No,Didn't apply,Yes,3.28,4.06,3.72,10,8,Political science,Political science international relations,Didnt apply,"UC Santa Cruz, cal poly slo",Social Sciences,Social Sciences,Other/Interdisciplinary,0.10625336043084216
+3/8/2026 18:08:06,Email,Yes,Didn't apply,No,4.0,4.58,4.14,7,7,engineering undeclared,electrical engineering,,uiuc grainger,Engineering,Engineering,,0.182964602511329
+3/8/2026 18:10:35,Id,Yes,Didn't apply,Yes,4.0,4.0,4.0,7,8,political science,public law,,Yale,Social Sciences,Public Admin,,0.0
+3/8/2026 18:14:56,Didn't apply,Yes,No,Yes,3.92,4.2,4.0,7,6,,Public Health with Concentration in Climate and Environmental Sciences,Environmental Engineering,,,Public Health,Engineering,0.1572416997870629
+3/8/2026 18:17:09,Didn't apply,No,No,Yes,3.78,4.58,4.0,8,7,,bio,bio,,,Life Sciences,Life Sciences,0.2169159592381498
+3/8/2026 18:26:53,Email,No,Didn't apply,No,3.66,3.66,4.0,7,6,Business,Math,,Note: my school does NOT do weighted GPAs + GPA is out of 100,Business,Physical Sciences/Math,,0.2872827238911384
+3/8/2026 18:29:53,Email,No,Yes,Yes,4.0,4.73,4.36,8,6,physics,physics,physics,UC Davis,Physical Sciences/Math,Physical Sciences/Math,Physical Sciences/Math,0.6920256238618246
+3/8/2026 18:30:04,Didn't apply,No,Didn't apply,No,3.6,4.05,4.0,7,5,Urban Planning,Urban Planning,,Penn State (for Architecture - they accept 100 people out of 1000 applicants),Architecture,Architecture,,0.3138610990907601
+3/8/2026 18:34:50,Id,Yes,Didn't apply,Yes,3.6,4.24,3.9,5,7,Data Science,Data Science,,"applied to 40 schools, most of them coming out in the following weeks",Computer Science,Computer Science,,0.08151649663623595
+3/8/2026 18:36:10,Email,No,Yes,Yes,3.89,4.42,4.35,9,7,Media Studies (changed from HAAS),Business Psychology,Business Administration,Cal State Long Beach | UC wise: UCSC,Arts & Humanities,Business,Business,0.4796237554082691
+3/8/2026 18:47:16,Email,No,Yes,Yes,3.89,4.1,4.1,8,7,Microbial Bio,Global Health,Public Health,UC Davis,Life Sciences,Public Health,Public Health,0.2000488929389689
+3/8/2026 18:47:57,Id,No,Yes,Yes,4.0,5.0,4.22,9,8,Physics,Undeclared,Undeclared,Caltech,Physical Sciences/Math,Undeclared,Undeclared,0.5230671014111844
+3/8/2026 18:50:31,Id,Yes,No,Yes,3.82,3.99,3.99,8,6,CS,CS,CS,UMichigan,Computer Science,Computer Science,Computer Science,0.11750518037988611
+3/8/2026 18:51:13,Email,No,Yes,Yes,3.91,4.25,4.25,5,7,materials engineering,structural engineering,aerospace engineering,davis,Engineering,Engineering,Engineering,0.26800895312630063
+3/8/2026 18:53:05,Didn't apply,Yes,Yes,No,3.57,3.76,3.76,5,7,,English,English,UC davis,,Arts & Humanities,Arts & Humanities,0.18648854287027308
+3/8/2026 18:56:04,Id,No,Didn't apply,Yes,3.74,4.42,4.04,9,9,Nuclear engineering,ChemE oceanography alt major,Didn’t apply,"UCSC undeclared major, ucr chemE with honors invitation",Engineering,Physical Sciences/Math,Other/Interdisciplinary,0.32789874211758885
+3/8/2026 18:56:54,Id,No,Didn't apply,Yes,4.0,4.21,4.21,3,8,cognitive science,chemistry,i did not apply to uci,mit (early action),Other/Interdisciplinary,Life Sciences,Other/Interdisciplinary,0.4252822817805496
+3/8/2026 19:03:36,Id,No,Yes,Yes,3.98,4.71,4.29,7,8,Political Science,Political Science - Public Policy,Social Policy and Public Service,USC,Social Sciences,Social Sciences,Social Sciences,0.45428575400637383
+3/8/2026 19:05:14,Id,No,Yes,Yes,3.9,4.7,4.3,8,7,Psych,Psych,Psych,Davis,Other/Interdisciplinary,Other/Interdisciplinary,Other/Interdisciplinary,0.5625570483435849
+3/8/2026 19:16:16,Id,No,No,No,3.87,4.33,4.33,4,4,enviro,enviro,enviro,ucsc ToTTTTTTTTTTT,Other/Interdisciplinary,Other/Interdisciplinary,Other/Interdisciplinary,0.5916770863185282
+3/8/2026 19:25:23,Id,Yes,Didn't apply,No,4.0,4.99,4.12,8,9,Civil Engineering,Aerospace Engineering,,I applied rd for all 8 ivy leagues so N/A,Engineering,Engineering,,0.16997857182245207
+3/8/2026 19:32:47,Id,No,Yes,No,3.89,4.18,4.04,10,10,engineering,engineering,engineering,uni north carolina chapel hill,Engineering,Engineering,Engineering,0.12528172922725855
+3/8/2026 19:38:08,Id,No,Yes,Yes,3.0,3.0,3.0,7,7,Biology,Human Biology,Bioengineering,San Francisco State University,Life Sciences,Life Sciences,Engineering,0.002566102874986057
+3/8/2026 19:47:45,Id,Yes,Didn't apply,No,4.0,4.11,,7,8,Computer Science,Computer Science,Computer Science,Carnegie Mellon University (breaking the ED contract bc unable to afford),Computer Science,Computer Science,Computer Science,0.0
+3/8/2026 20:04:19,Id,Yes,Didn't apply,No,3.68,3.93,4.06,9,10,Nutrition and Metabolic Biology,Human Biology,,Pitzer College,Life Sciences,Life Sciences,,0.2683547475687756
+3/8/2026 20:05:32,Id,No,Yes,Yes,4.0,4.89,4.11,6,7,Bio,Bio,Bio,UCD,Life Sciences,Life Sciences,Life Sciences,0.3166884106217264
+3/8/2026 20:06:03,Email,No,Yes,Yes,4.0,4.99,4.15,8,9,molecular biology,Bioengineering,CS,University of Chicago,Life Sciences,Engineering,Computer Science,0.18974084030889882
+3/8/2026 20:07:20,Id,Yes,Yes,Yes,3.47,3.5,3.5,9,8,History,English,Undeclared Major,"University of Florida, Georgia Tech",Arts & Humanities,Arts & Humanities,Undeclared,0.0860382945509651
+3/8/2026 20:11:26,Id,No,Yes,No,3.93,4.48,4.21,8,9,HAAS— Spieker (Business Admin),Business,Business,,Business,Business,Business,0.33173514540139654
+3/8/2026 20:12:08,Email,No,Didn't apply,Yes,3.94,4.19,3.94,8,9,chemistry,mechanical major,didn't apply,case western,Life Sciences,Engineering,Undeclared,0.08391660219331726
+3/8/2026 20:13:33,Id,No,No,No,4.0,4.53,4.48,7,7,Political Science,Political Science,Political Science,,Social Sciences,Social Sciences,Social Sciences,0.5479072230056
+3/8/2026 20:13:41,Email,Yes,No,No,0.58,0.61,0.61,9,10,i thought maybe it's a poliltical science major,these one i chose economics,i want to do farmaceutical major,san diego city college,Public Admin,Business,Other/Interdisciplinary,6.100654953471474e-08
+3/8/2026 20:33:45,Email,No,No,Yes,3.77,4.27,4.18,7,8,Economics,Business Economics,Business Administration,Pepperdine,Public Admin,Business,Business,0.3030222691317998
+3/8/2026 20:55:39,Id,Yes,No,Yes,3.8,4.39,4.0,9,9,Sociology,Political Science,Criminology,,Social Sciences,Social Sciences,Social Sciences,0.23621306612771537
+3/8/2026 21:34:51,Id,No,Didn't apply,No,3.92,4.52,4.42,9,8,SUBP,Economics,,,Other/Interdisciplinary,Public Admin,,0.0
+3/8/2026 21:45:20,Email,No,Yes,Yes,3.71,4.46,3.81,8,7,History,History,History,Davis,Arts & Humanities,Arts & Humanities,Arts & Humanities,0.21385631641389485
+3/8/2026 22:07:55,Id,Yes,No,Yes,3.9,4.4,4.23,9,8,Economics,Economics,Economics,,Public Admin,Public Admin,Public Admin,0.0
+3/9/2026 1:20:02,Email,No,Yes,Yes,4.0,4.23,4.23,7,7,Math,Math,Math,Davis,Physical Sciences/Math,Physical Sciences/Math,Physical Sciences/Math,0.5471436667865329
+3/9/2026 2:09:16,Id,No,Yes,Yes,4.0,4.79,4.25,7,8,Political Science,Political Science - International Relations,Political Science,UC Davis/McGill,Social Sciences,Social Sciences,Social Sciences,0.42068881374249784
+3/9/2026 6:47:47,Id,No,Yes,No,4.0,4.6,4.27,7,8,Sociology,Political Science,Sociology,UNC Chapel-Hill (Honors Program),Social Sciences,Social Sciences,Social Sciences,0.4374155182841115
+3/9/2026 9:29:01,Id,No,Didn't apply,No,4.0,4.26,4.26,8,5,statistics/math,math and economics,,University of Washington,Other/Interdisciplinary,Other/Interdisciplinary,,0.5230846516023223
+3/9/2026 12:19:23,Id,Yes,No,Yes,3.55,4.09,3.91,8,8,Political Science,Political Science,Political Science,UC Santa Cruz,Social Sciences,Social Sciences,Social Sciences,0.18529851945580808
+3/9/2026 13:47:10,Id,Yes,Yes,No,3.9,3.9,3.9,8,7,Philosophy,Philosophy,Philosophy,"USF, SFSU, SJSU (all safety)",Arts & Humanities,Arts & Humanities,Arts & Humanities,0.2701707938724279
+3/9/2026 15:16:02,Id,Yes,Yes,Yes,4.0,4.67,4.33,8,7,Mechanical Engineering,Mechanical Engineering,Mechanical Engineering,Northeastern (Boston Campus),Engineering,Engineering,Engineering,0.34362299634432036
+3/9/2026 17:05:29,Email,No,Yes,Yes,3.7,4.1,4.1,10,8,Biology,Public health,biological sciences,UC Davis,Life Sciences,Public Health,Life Sciences,0.2000488929389689
+3/9/2026 21:30:35,Id,No,Yes,Yes,4.0,4.56,4.2,8,8,Physics,Physics,Physics,Stanford,Physical Sciences/Math,Physical Sciences/Math,Physical Sciences/Math,0.5114857585011762
+3/10/2026 0:23:08,Email,No,Yes,No,3.97,,,8,10,Pub health,Human bio,Pub health,,Public Health,Other/Interdisciplinary,Public Health,0.0
+3/10/2026 2:29:10,Id,No,No,No,3.9,4.0,4.0,8,8,Data Science,Data Science,Data Science,UW or UIUC,Computer Science,Computer Science,Computer Science,0.12226021501823539
+3/10/2026 5:29:49,Didn't apply,No,No,Yes,4.2,4.2,,8,7,Astrophysics,,,"N/A. Btw random tip, surveyswap.io was a lifesaver for finding respondents, and it's free. Anyway, good luck!",Physical Sciences/Math,,,0.0
+3/10/2026 21:54:37,Email,No,No,Yes,3.91,4.64,4.27,6,6,Mechanical Engineering,Mechanical Engineering,Mechanical Engineering,SJSU,Engineering,Engineering,Engineering,0.28590458041810385
+3/10/2026 22:12:06,Id,No,Yes,Yes,3.87,4.67,4.27,7,7,Sociology,Sociology,Sociology,USC,Social Sciences,Social Sciences,Social Sciences,0.4374155182841115
+3/10/2026 23:32:56,Email,No,Yes,Yes,3.86,4.18,4.08,4,3,applied math,,applied math,"currently all the free ucs that i applied to, i only applied to ucs",Physical Sciences/Math,,Physical Sciences/Math,0.0
+3/10/2026 23:33:55,Id,No,Yes,No,4.0,4.66,4.13,5,8,ECE,ECE,EE,"Stanford, Georgia Tech",Engineering,Engineering,Engineering,0.17637768648814126
+3/10/2026 23:44:37,Didn't apply,No,No,No,3.86,4.38,4.15,6,6,,bio,bio,udub,,Life Sciences,Life Sciences,0.3585024423419934
+3/11/2026 7:36:15,Id,No,Didn't apply,No,4.0,4.0,4.0,8,6,Computer Science,Computer Science,,University of Virginia,Computer Science,Computer Science,,0.12226021501823539
+3/11/2026 16:36:15,Didn't apply,Yes,No,Yes,3.64,4.13,4.13,6,8,,Stats,DATA Science,,,Life Sciences,Computer Science,0.337277290538119
+3/12/2026 16:44:08,Id,Yes,Didn't apply,No,3.93,4.43,4.11,7,7,Political Science,Political Science - Intl relations,,,Social Sciences,Social Sciences,,0.3104605623641356
