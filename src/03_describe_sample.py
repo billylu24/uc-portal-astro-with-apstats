@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -6,7 +8,9 @@ import seaborn as sns
 # ⚙️ 配置区
 # ==========================================
 # 确保这里读取的是你用大模型清洗后的文件
-INPUT_CSV = "uc_data_final_ai_cleaned.csv"
+INPUT_CSV = "data/processed/uc_applications_ai_major_categories.csv"
+FIGURE_DIR = Path("outputs/figures")
+FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 
 try:
     df = pd.read_csv(INPUT_CSV)
@@ -53,7 +57,7 @@ for i, col in enumerate(gpa_cols, 1):
     plt.ylabel('Count')
 
 plt.tight_layout()
-plt.savefig("1_GPA_Distribution_Micro.png", dpi=300)
+plt.savefig(FIGURE_DIR / "gpa_distributions_micro_bins.png", dpi=300)
 plt.show()
 # ==========================================
 # 2. 软实力 PIQ & EC 评估分析 (文本 + 图表)
@@ -77,7 +81,7 @@ for i, col in enumerate(rating_cols, 1):
     plt.xlabel('Score (1-10)')
     plt.ylabel('Number of Applicants')
 plt.tight_layout()
-plt.savefig("2_PIQ_EC_Distribution.png", dpi=300)
+plt.savefig(FIGURE_DIR / "piq_ec_self_rating_distributions.png", dpi=300)
 plt.show()
 
 # ==========================================
@@ -111,7 +115,7 @@ for i, (school, col) in enumerate(ai_major_cols.items(), 1):
         plt.xlabel('Number of Applicants')
         plt.ylabel('')  # 隐藏 y 轴标签让画面更干净
 plt.tight_layout()
-plt.savefig("3_Top_Majors.png", dpi=300)
+plt.savefig(FIGURE_DIR / "top_major_categories_by_campus.png", dpi=300)
 plt.show()
 
 print("\n🎉 分析完成！所有图表不仅在屏幕上弹出了，还自动保存在了你代码所在的文件夹里 (高清 PNG 格式)。")

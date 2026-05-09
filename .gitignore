@@ -1,9 +1,12 @@
-# 忽略 Python 缓存文件
+# Python cache files
 __pycache__/
 *.py[cod]
 
-# 忽略 Mac 系统的隐藏文件
+# macOS metadata
 .DS_Store
 
-# 如果你的 CSV 包含别人的隐私数据（比如全名/学号），就把下面这行取消注释
+# Manual local counting utility
+counter.py
+
+# Uncomment if CSV files contain private applicant identifiers.
 # *.csv

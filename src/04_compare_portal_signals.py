@@ -7,7 +7,7 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-INPUT_CSV = "uc_data_final_ai_cleaned.csv"
+INPUT_CSV = "data/processed/uc_applications_ai_major_categories.csv"
 try:
     df = pd.read_csv(INPUT_CSV)
 except FileNotFoundError:

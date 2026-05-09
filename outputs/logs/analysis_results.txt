@@ -44,7 +44,7 @@ PIQ      | 7.405    | 7.384    | +0.021  | 0.9128 | 0.015    |    54.2% | N/A
 EC       | 7.190    | 7.035    | +0.155  | 0.5157 | 0.095    |    74.0% | N/A
 
 
-C:\Users\billy\anaconda3\python.exe C:\Users\billy\PycharmProjects\PortalAstroAnalysis\expectation.py
+C:\Users\billy\anaconda3\python.exe C:\Users\billy\PycharmProjects\PortalAstroAnalysis\src\05_apstats_expected_admits.py
 === Expected vs. Actual Astrology Analysis ===
 Model: AP Stats Bayesian Model (Normal Distributions)
 Method: P(Admit|GPA) = P(Admit) * P(GPA|Admit) / P(GPA)
@@ -56,7 +56,7 @@ Method: P(Admit|GPA) = P(Admit) * P(GPA|Admit) / P(GPA)
   Actual Astrology   : 176 (Omen: 'Id')
   Difference         : +94.86 (Ratio: 2.17x)
 ---------------------------------------------------------------------------
-Saved scored file: berkeley_scored_ap_stats.csv
+Saved scored file: outputs/scored_probabilities/uc_berkeley_apstats_expected_probabilities.csv
 ---------------------------------------------------------------------------
 [UC San Diego] AP Stats Pool | Mean=3.901, Std=0.495 | N=129373
 [UC San Diego] Validation Results
@@ -65,7 +65,7 @@ Saved scored file: berkeley_scored_ap_stats.csv
   Actual Astrology   : 142 (Omen: 'No')
   Difference         : +5.96 (Ratio: 1.04x)
 ---------------------------------------------------------------------------
-Saved scored file: ucsd_scored_ap_stats.csv
+Saved scored file: outputs/scored_probabilities/uc_san_diego_apstats_expected_probabilities.csv
 ---------------------------------------------------------------------------
 [UC Irvine] AP Stats Pool | Mean=3.872, Std=0.514 | N=118252
 [UC Irvine] Validation Results
@@ -74,5 +74,13 @@ Saved scored file: ucsd_scored_ap_stats.csv
   Actual Astrology   : 116 (Omen: 'Yes')
   Difference         : -5.11 (Ratio: 0.96x)
 ---------------------------------------------------------------------------
-Saved scored file: uci_scored_ap_stats.csv
+Saved scored file: outputs/scored_probabilities/uc_irvine_apstats_expected_probabilities.csv
 ---------------------------------------------------------------------------
+UCI Astrology Performance Metrics:
+--- 当前统计结果 ---
+真阳 (TP - 能登录+录取): 75
+假阳 (FP - 能登录+拒/WL): 22
+假阴 (FN - 没登录+录取): 20
+真阴 (TN - 没登录+拒/WL): 33
+总计样本: 150
+玄学准确率 (Precision): 77.32%

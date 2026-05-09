@@ -1,6 +1,7 @@
 import math
 import warnings
 from dataclasses import dataclass
+from pathlib import Path
 
 import pandas as pd
 from scipy.stats import norm
@@ -10,10 +11,10 @@ warnings.filterwarnings("ignore")
 # =========================
 # File paths
 # =========================
-INPUT_CSV = "uc_data_final_ai_cleaned.csv"  # your astrology sample
-BERK_BINS_CSV = "Berk.csv"  # official Berkeley applicant GPA bins
-UCSD_BINS_CSV = "UCSD.csv"  # official UCSD applicant GPA bins
-UCI_BINS_CSV = "UCI.csv"  # official UCI applicant GPA bins
+INPUT_CSV = "data/processed/uc_applications_ai_major_categories.csv"
+BERK_BINS_CSV = "data/raw_public_gpa_bins/uc_berkeley_2025_applicant_gpa_bins.csv"
+UCSD_BINS_CSV = "data/raw_public_gpa_bins/uc_san_diego_2025_applicant_gpa_bins.csv"
+UCI_BINS_CSV = "data/raw_public_gpa_bins/uc_irvine_2025_applicant_gpa_bins.csv"
 
 GPA_MAX = 4.40
 MAX_ADMIT_PROB = 0.85  # 设置录取率天花板（Holistic review决定了满分也不可能100%录取）
@@ -236,6 +237,7 @@ def run_expectation_vs_astrology(
     print("-" * 75)
 
     if output_csv is not None:
+        Path(output_csv).parent.mkdir(parents=True, exist_ok=True)
         cols_to_keep = [c for c in df_school.columns if c != "Expected_Prob"] + ["Expected_Prob"]
         df_school[cols_to_keep].to_csv(output_csv, index=False)
         print(f"Saved scored file: {output_csv}")
@@ -269,7 +271,7 @@ def main():
             good_omen_val="Id",
             school_data=UCB_DATA,
             campus_pool=pools["UC Berkeley"],
-            output_csv="berkeley_scored_ap_stats.csv",
+            output_csv="outputs/scored_probabilities/uc_berkeley_apstats_expected_probabilities.csv",
         )
 
         run_expectation_vs_astrology(
@@ -281,7 +283,7 @@ def main():
             good_omen_val="No",
             school_data=UCSD_DATA,
             campus_pool=pools["UC San Diego"],
-            output_csv="ucsd_scored_ap_stats.csv",
+            output_csv="outputs/scored_probabilities/uc_san_diego_apstats_expected_probabilities.csv",
         )
 
         run_expectation_vs_astrology(
@@ -293,7 +295,7 @@ def main():
             good_omen_val="Yes",
             school_data=UCI_DATA,
             campus_pool=pools["UC Irvine"],
-            output_csv="uci_scored_ap_stats.csv",
+            output_csv="outputs/scored_probabilities/uc_irvine_apstats_expected_probabilities.csv",
         )
 
 

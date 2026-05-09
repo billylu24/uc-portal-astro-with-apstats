@@ -1,5 +1,6 @@
 import pandas as pd
 import re
+from pathlib import Path
 
 # 1. 在这三个引号中间，直接粘贴你的所有原始文本数据！
 RAW_DATA = """
@@ -650,7 +651,8 @@ if __name__ == "__main__":
     cleaned_df = process_and_clean_data(RAW_DATA)
 
     # 导出为 CSV 文件 (utf-8-sig 确保 Excel 打开不乱码)
-    output_filename = "uc_application_data_cleaned.csv"
+    output_filename = "data/processed/uc_application_data_cleaned.csv"
+    Path(output_filename).parent.mkdir(parents=True, exist_ok=True)
     cleaned_df.to_csv(output_filename, index=False, encoding='utf-8-sig')
     print(f"大功告成！清洗后的数据已保存为：{output_filename}")
 

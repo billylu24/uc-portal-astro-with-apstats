@@ -4,8 +4,8 @@ import ollama
 # ==========================================
 # ⚙️ 配置区 (请确认这里的输入文件名)
 # ==========================================
-INPUT_CSV = "uc_application_data_cleaned.csv"
-OUTPUT_CSV = "uc_data_final_ai_cleaned.csv"  # 清洗后导出的新文件名
+INPUT_CSV = "data/processed/uc_application_data_cleaned.csv"
+OUTPUT_CSV = "data/processed/uc_applications_ai_major_categories.csv"
 MODEL_NAME = "qwen2.5:3b"  # 使用的本地 AI 模型
 
 # ==========================================

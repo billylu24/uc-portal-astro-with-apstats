@@ -1,91 +1,315 @@
-UC Portal Astrology: 概率统计与录取预测模型 (UC Portal Astro with AP Stats)
+# UC Portal Signal AP Statistics Analysis
 
+This project studies whether informal UC applicant portal signals are statistically aligned with applicant profile strength and with an AP Statistics-style expected-admission model.
 
-⚠️ 免责声明 / Disclaimer
-中文：
-本项目仅供娱乐和统计学爱好者交流使用。这不是一项严谨的科学研究，而是作者出于兴趣、为了“好玩”而发起的个人小项目。项目中的“门户玄学”数据均来自申请者的自愿匿名填报，不代表加州大学（UC）官方的招生立场或审核流程。录取预测结果仅基于正态分布模型模拟，具有局限性，请勿将其作为最终录取结果的参考依据。
+The project does not claim that portal behavior causes admission outcomes or that any portal state is an official decision. The purpose is narrower: quantify whether observed portal states behave like noisy admission signals in this self-reported sample.
 
-English:
-This project is for entertainment and statistical interest only. It is NOT a formal scientific study but a small personal "just-for-fun" project. The "Portal Astrology" data is sourced from voluntary anonymous submissions and does not represent the official admission policies or procedures of the University of California (UC). Prediction results are based on normal distribution simulations and are subject to limitations; they should not be relied upon as a definitive indicator of admission outcomes.
+## Project Structure
 
-🚀 项目背景 / Project Background
-中文：
-每当 UC 录取季临近，申请者群体中总会流传关于门户状态（如 ID 变化、Banner 消失、特定链接登录权限等）的“玄学”预兆。本项目通过收集真实的申请者样本数据，利用贝叶斯定理和倾向评分匹配 (PSM) 等统计手段，试图观察这些玄学现象背后的数据分布，并量化这些“好兆头”与实际学术水平之间的相关性。
+```text
+.
+|-- data/
+|   |-- processed/
+|   |   |-- uc_application_data_cleaned.csv
+|   |   `-- uc_applications_ai_major_categories.csv
+|   `-- raw_public_gpa_bins/
+|       |-- uc_berkeley_2025_applicant_gpa_bins.csv
+|       |-- uc_irvine_2025_applicant_gpa_bins.csv
+|       `-- uc_san_diego_2025_applicant_gpa_bins.csv
+|-- outputs/
+|   |-- figures/
+|   |   |-- gpa_distributions_micro_bins.png
+|   |   |-- piq_ec_self_rating_distributions.png
+|   |   `-- top_major_categories_by_campus.png
+|   |-- logs/
+|   |   `-- analysis_results.txt
+|   `-- scored_probabilities/
+|       |-- uc_berkeley_apstats_expected_probabilities.csv
+|       |-- uc_irvine_apstats_expected_probabilities.csv
+|       `-- uc_san_diego_apstats_expected_probabilities.csv
+|-- src/
+|   |-- 01_clean_application_data.py
+|   |-- 02_categorize_majors.py
+|   |-- 03_describe_sample.py
+|   |-- 04_compare_portal_signals.py
+|   `-- 05_apstats_expected_admits.py
+`-- README.md
+```
 
-English:
-As the UC admission season approaches, rumors about "portal astrology" (e.g., ID changes, disappearing banners, specific login permissions) often circulate among applicants. This project collects real applicant sample data and uses statistical methods like Bayesian Theorem and Propensity Score Matching (PSM) to observe the data distribution behind these "omens" and quantify the correlation between these "good signs" and actual academic profiles.
+File naming convention:
 
-📈 初步发现与示例结果 / Preliminary Findings
-(注：以下为基于部分测试样本的示例运行结果，具体数据请以最新样本跑出的结果为准 / Note: The following are sample results based on initial datasets. Please refer to the latest output for actual figures.)
+- `data/raw_public_gpa_bins/`: external public GPA-bin inputs used by the AP Stats model.
+- `data/processed/`: cleaned applicant-level sample data.
+- `src/`: numbered scripts in execution order.
+- `outputs/figures/`: generated visual summaries.
+- `outputs/scored_probabilities/`: applicant-level expected probabilities from the AP Stats model.
+- `outputs/logs/`: captured text output from analysis runs.
 
-中文：
-通过运行 statsanalysis.py 和 expectation.py，我们得出了一些有趣的结论：
+## Research Questions
 
-UC Berkeley (ID vs Email): 数据显示，门户显示“ID”的群体（Good Omen）在加权 GPA（GPA_W）上的均值略高于显示“Email”的群体。通过 PSM（倾向评分匹配）控制了 PIQ 和课外活动评分后，这种学术差距依然存在。贝叶斯后验概率（Bayes Prob）显示，“ID派”的学术底子强于“Email派”的概率高达 80%+。
+1. Do applicants with a favorable portal state have stronger GPA, PIQ, or EC profiles than applicants with an unfavorable portal state?
+2. If admissions are modeled using public GPA-bin distributions and major-category admit-rate assumptions, how close are expected admits to the observed favorable portal counts?
+3. For UCI, how accurate is the login-related portal signal in a manually checked outcome subset?
 
-UC San Diego (Banner 消失理论): 传言中 #3 Prestige Banner 消失（回答 "No"）是录取的好兆头。模型测算表明，Banner 消失群体的预期录取数（Expected Admits）与实际玄学人数高度重合，且 P-Value 小于 0.05，存在统计学上的显著性差异。
+## Data Sources
 
-UC Irvine (提前登录链接): 能够成功登入 UCI 特定链接的样本，其学术水平（UW & W GPA）显著分布在官方历年录取的 Q3（前25%）区间内。
+### Applicant Sample
 
-English:
-By running statsanalysis.py and expectation.py, we found some interesting patterns:
+Primary cleaned file:
 
-UC Berkeley (ID vs Email): The data shows that the group with "ID" on their portal (Good Omen) has a slightly higher mean Weighted GPA than the "Email" group. After controlling for PIQ and EC ratings using PSM, this academic gap persists. Bayesian posterior probability suggests an 80%+ chance that the "ID" group has a stronger academic profile.
+- `data/processed/uc_applications_ai_major_categories.csv`
 
-UC San Diego (The Disappearing Banner): Rumor has it that the disappearance of the #3 Prestige Banner (answering "No") is a strong sign of admission. Our model indicates that the "Expected Admits" for this group align closely with the actual astrology count, yielding a P-Value < 0.05, showing statistical significance.
+Sample summary:
 
-UC Irvine (Early Login Link): Applicants who could successfully log in to the specific UCI link consistently had GPAs distributed within the Q3 (top 25%) range of the official historical admission data.
+| Variable | n | Mean | Median | SD | Min | Max |
+|---|---:|---:|---:|---:|---:|---:|
+| UC unweighted GPA | 277 | 3.865 | 3.940 | 0.287 | 0.58 | 4.20 |
+| UC weighted GPA | 272 | 4.352 | 4.400 | 0.448 | 0.61 | 5.35 |
+| UC weighted capped GPA | 268 | 4.118 | 4.180 | 0.348 | 0.61 | 4.90 |
+| PIQ self-rating | 277 | 7.307 | 8.000 | 1.529 | 1 | 10 |
+| EC self-rating | 277 | 7.130 | 7.000 | 1.670 | 1 | 10 |
 
-📂 文件结构 / File Structure
-clean.py:
+The sample is self-reported. It is not a random sample of all UC applicants.
 
-CN: 原始数据清洗引擎，负责处理非结构化文本并标准化 GPA 分数。
+### Public GPA-Bin Inputs
 
-EN: Data cleaning engine that processes unstructured text and standardizes GPA scores.
+The AP Stats model uses 2025 public applicant GPA-bin files:
 
-statsanalysis.py:
+- `data/raw_public_gpa_bins/uc_berkeley_2025_applicant_gpa_bins.csv`
+- `data/raw_public_gpa_bins/uc_san_diego_2025_applicant_gpa_bins.csv`
+- `data/raw_public_gpa_bins/uc_irvine_2025_applicant_gpa_bins.csv`
 
-CN: 核心统计分析工具。包含 T-Test、贝叶斯概率以及 PSM 算法，消除背景差异，评估玄学指标的置信度。
+These files contain grouped HS weighted capped GPA counts. Since the data are binned, the model approximates the underlying applicant GPA distribution rather than observing it directly.
 
-EN: Core statistical analysis tool. Includes T-Tests, Bayesian probabilities, and PSM algorithms to control variables and evaluate astrology indicators.
+## Portal Signal Definitions
 
-expectation.py:
+| Campus | Portal field | Favorable signal | Unfavorable signal | Excluded from comparison |
+|---|---|---:|---:|---:|
+| UC Berkeley | `Berkeley id or email?` | `Id` | `Email` | `Didn't Apply` |
+| UC San Diego | `Is your UCSD #3 prestige banner there?` | `No` | `Yes` | `Didn't Apply` |
+| UC Irvine | `Can you log in to the UCI link?` | `Yes` | `No` | `Didn't Apply` |
 
-CN: 基于官方录取区间拟合正态分布，利用贝叶斯公式 P(Admit|GPA) 计算每个样本的“预期录取概率”。
+Observed counts:
 
-EN: Fits normal distributions based on official admission ranges to calculate the "expected admission probability" using Bayes' theorem.
+| Campus | Favorable n | Unfavorable n | Did not apply n |
+|---|---:|---:|---:|
+| UC Berkeley | 176 | 67 | 34 |
+| UC San Diego | 142 | 106 | 29 |
+| UC Irvine | 116 | 86 | 75 |
 
-majorclarify.py & populationanalysis.py:
+These definitions reflect the working hypotheses used in the analysis. They should not be interpreted as official UC definitions.
 
-CN: 专业类别归纳与样本总体多样性分析。
+## Methodology
 
-EN: Major categorization and population diversity analysis.
+### 1. Descriptive Sample Analysis
 
-🛠️ 技术实现 / Technical Implementation
-Data Processing: 使用 pandas 进行数据清洗，通过正则表达式提取并标准化 1-10 评分及 GPA（包含百分制到 4.0 分制的转换）。
+Script:
 
-Probability Modeling: 针对不同校区（UCB, UCSD, UCI）的官方基准数据（基于 Berk.csv 等），利用 scipy.stats 拟合正态分布曲线。
+```bash
+python src/03_describe_sample.py
+```
 
-Astrology Validation:
+This script summarizes GPA, PIQ, EC, and major-category distributions. It also generates:
 
-UC Berkeley: 验证 ID 是否比 Email 更具预兆性。
+- `outputs/figures/gpa_distributions_micro_bins.png`
+- `outputs/figures/piq_ec_self_rating_distributions.png`
+- `outputs/figures/top_major_categories_by_campus.png`
 
-UC San Diego: 验证 #3 Prestige Banner 消失 ("No") 是否为录取信号。
+Purpose:
 
-UC Irvine: 验证特定链接的提前登录权限 ("Yes")。
+- Establish whether the sample is academically strong or skewed.
+- Identify major-category concentration.
+- Provide context before interpreting portal-signal comparisons.
 
-📊 核心指标定义 / Key Metrics
-Expected Admits (预期录取数): 基于学术成绩与历史录取分布计算出的理应录取人数。
+### 2. Favorable vs Unfavorable Portal Group Comparison
 
-Actual Astrology (玄学实测数): 实际出现“好兆头”的人数。
+Script:
 
-Cohen's d: 测量两组样本之间差异大小的效应量（Effect Size）。
+```bash
+python src/04_compare_portal_signals.py
+```
 
-Ratio: 玄学实测数与预期录取数的比值。如果实测数远高于预期数，则暗示该玄学预兆具有较强的偏差或特定的相关性。
+For each campus, the script compares favorable and unfavorable portal groups on:
 
-⚖️ 许可说明 / License
-中文：
-本项目代码开源，仅供学习交流。严禁用于任何商业用途或误导性宣传。
+- UC unweighted GPA
+- UC weighted GPA
+- PIQ self-rating
+- EC self-rating
 
-English:
-The code is open-source for educational and exchange purposes only. Commercial use or misleading promotion is strictly prohibited.
+Reported statistics:
+
+- Mean difference: `mean(favorable) - mean(unfavorable)`
+- Welch two-sample t-test p-value
+- Cohen's d
+- Simulation-based probability that the favorable-group mean is larger
+- Propensity-score-matched GPA difference using PIQ and EC as matching covariates
+
+Interpretation rules:
+
+- A positive GPA difference means the favorable portal group has higher average GPA.
+- A low p-value means the observed mean difference is less compatible with a zero-difference null model.
+- Cohen's d measures standardized effect size; values around 0.2 are small, around 0.5 are moderate.
+- The simulation probability is descriptive and depends on normal approximation of mean uncertainty.
+- PSM adjustment is not causal; it only checks whether GPA differences persist after balancing on two self-rated non-GPA variables.
+
+### 3. AP Stats Expected-Admit Model
+
+Script:
+
+```bash
+python src/05_apstats_expected_admits.py
+```
+
+The model estimates applicant-level admission probabilities using:
+
+```text
+P(Admit | GPA) = P(Admit) * P(GPA | Admit) / P(GPA)
+```
+
+Model components:
+
+- `P(Admit)` is a broad campus-major-category admit-rate assumption.
+- `P(GPA | Admit)` is approximated as a normal distribution inferred from admitted-student GPA Q1 and Q3.
+- `P(GPA)` is approximated as a normal distribution fitted from public applicant GPA bins.
+- Applicant GPA is represented by UC weighted capped GPA.
+- Individual probabilities are capped at 0.85 because real admissions are holistic and should not be modeled as certain from GPA alone.
+
+The model then sums applicant-level probabilities:
+
+```text
+Expected admits = sum(P_i(Admit | GPA_i, major_category_i))
+```
+
+This produces an expected-admit count for the sample, which is compared with the observed favorable portal count.
+
+Important caveat:
+
+The AP Stats model is a structured approximation, not a production admissions model. It intentionally uses limited public information so that the reasoning is transparent and reproducible.
+
+## Results
+
+### Favorable vs Unfavorable Portal Groups
+
+| Campus | Metric | Favorable mean | Unfavorable mean | Difference | p-value | Cohen's d | P(favorable > unfavorable) | PSM diff |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| UC Berkeley | GPA_UW | 3.899 | 3.828 | +0.071 | 0.1880 | 0.267 | 90.8% | +0.101 |
+| UC Berkeley | GPA_W | 4.426 | 4.241 | +0.185 | 0.0139 | 0.440 | 99.4% | +0.094 |
+| UC Berkeley | PIQ | 7.449 | 7.493 | -0.044 | 0.8106 | -0.032 | 40.6% | N/A |
+| UC Berkeley | EC | 7.318 | 7.239 | +0.079 | 0.7264 | 0.050 | 63.8% | N/A |
+| UC San Diego | GPA_UW | 3.913 | 3.812 | +0.102 | 0.0143 | 0.354 | 99.3% | +0.063 |
+| UC San Diego | GPA_W | 4.426 | 4.283 | +0.142 | 0.0201 | 0.321 | 99.1% | +0.133 |
+| UC San Diego | PIQ | 7.359 | 7.368 | -0.009 | 0.9631 | -0.006 | 48.0% | N/A |
+| UC San Diego | EC | 7.282 | 7.066 | +0.216 | 0.3174 | 0.132 | 84.2% | N/A |
+| UC Irvine | GPA_UW | 3.900 | 3.805 | +0.095 | 0.0587 | 0.303 | 97.1% | +0.066 |
+| UC Irvine | GPA_W | 4.405 | 4.283 | +0.123 | 0.0795 | 0.263 | 96.2% | +0.099 |
+| UC Irvine | PIQ | 7.405 | 7.384 | +0.021 | 0.9128 | 0.015 | 54.2% | N/A |
+| UC Irvine | EC | 7.190 | 7.035 | +0.155 | 0.5157 | 0.095 | 74.0% | N/A |
+
+Main interpretation:
+
+- Favorable portal groups have higher average GPA across all three campuses.
+- UC Berkeley and UC San Diego show statistically clearer weighted-GPA separation.
+- UCI shows the same direction, but with weaker statistical evidence in this sample.
+- PIQ and EC differences are small and statistically weak, which suggests the portal signal is more aligned with GPA than with self-rated qualitative strength.
+
+### AP Stats Expected vs Observed Favorable Signals
+
+| Campus | Applicant-pool GPA mean | Applicant-pool GPA SD | Public GPA-bin N | Valid sample n | Expected admits | Favorable portal count | Difference | Ratio |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| UC Berkeley | 3.972 | 0.432 | 118,869 | 243 | 81.14 | 176 | +94.86 | 2.17x |
+| UC San Diego | 3.901 | 0.495 | 129,373 | 248 | 136.04 | 142 | +5.96 | 1.04x |
+| UC Irvine | 3.872 | 0.514 | 118,252 | 202 | 121.11 | 116 | -5.11 | 0.96x |
+
+Main interpretation:
+
+- UC San Diego and UC Irvine favorable portal counts are close to model expectations.
+- UC Berkeley has far more `Id` observations than expected admits under this model.
+- Therefore, the Berkeley `Id` state may be a weaker or broader signal than the UCSD and UCI favorable states, or the model may substantially underestimate Berkeley competitiveness in this sample.
+
+### UCI Manual Outcome Check
+
+Manual UCI classification counts:
+
+| Category | Meaning | Count |
+|---|---|---:|
+| TP | Can log in and admitted | 75 |
+| FP | Can log in but rejected/waitlisted | 22 |
+| FN | Cannot log in but admitted | 20 |
+| TN | Cannot log in and rejected/waitlisted | 33 |
+
+Derived metrics:
+
+| Metric | Formula | Value |
+|---|---|---:|
+| Precision | TP / (TP + FP) | 77.32% |
+| Recall | TP / (TP + FN) | 78.95% |
+| Specificity | TN / (TN + FP) | 60.00% |
+| Accuracy | (TP + TN) / total | 72.00% |
+
+Interpretation:
+
+- The UCI login signal is informative in the manually checked subset.
+- It is not definitive: both false positives and false negatives are material.
+- Precision is stronger than specificity, meaning the signal is better at supporting positive cases than ruling out non-admits.
+
+## Meaning of the Findings
+
+The strongest evidence is not that portal signals perfectly predict decisions. They do not. The stronger conclusion is that favorable portal states are not randomly distributed with respect to applicant strength in this sample.
+
+The GPA pattern matters because GPA is an admissions-relevant variable and is consistently higher in favorable portal groups. The AP Stats comparison matters because it asks a different question: not whether favorable groups are stronger, but whether the count of favorable signals is plausible under a transparent expected-admission model.
+
+UCSD and UCI are the most internally consistent cases: favorable signal counts are close to expected admits, and favorable groups have stronger GPA profiles. Berkeley is different: the `Id` count is much larger than expected admits, so it should be treated as a broader and less selective indicator unless additional validation data show otherwise.
+
+## Limitations
+
+1. Selection bias: the sample is self-reported and likely overrepresents applicants who are highly engaged with portal tracking.
+2. Measurement error: GPA, PIQ, EC, major, portal state, and outcome labels may contain reporting mistakes.
+3. Major simplification: detailed majors are reduced into broad AI-categorized groups, which loses program-level selectivity.
+4. Limited covariates: the AP Stats model does not include essays, course rigor, school context, awards, residency, first-generation status, special talents, or institutional priorities.
+5. Approximate public data: GPA-bin files are grouped, so applicant-pool distributions are fitted from interval midpoints rather than raw observations.
+6. Normality assumption: both applicant and admit GPA distributions are approximated as normal distributions, which may not hold well near GPA ceilings.
+7. Probability cap: the 0.85 cap is a modeling judgment, not an empirical UC rule.
+8. Multiple comparisons: many tests are reported, so isolated p-values should not be overinterpreted.
+9. Signal definition uncertainty: favorable and unfavorable portal labels are hypothesis-driven and campus-specific.
+10. No causal identification: differences between portal groups do not prove that portal state causes, determines, or officially reflects an admission decision.
+
+## Reproducibility
+
+Required Python packages:
+
+- `pandas`
+- `numpy`
+- `scipy`
+- `scikit-learn`
+- `matplotlib`
+- `seaborn`
+
+Run the analysis from the repository root:
+
+```bash
+python src/03_describe_sample.py
+python src/04_compare_portal_signals.py
+python src/05_apstats_expected_admits.py
+```
+
+Optional upstream data-preparation scripts:
+
+```bash
+python src/01_clean_application_data.py
+python src/02_categorize_majors.py
+```
+
+Expected outputs:
+
+```text
+outputs/figures/gpa_distributions_micro_bins.png
+outputs/figures/piq_ec_self_rating_distributions.png
+outputs/figures/top_major_categories_by_campus.png
+outputs/scored_probabilities/uc_berkeley_apstats_expected_probabilities.csv
+outputs/scored_probabilities/uc_san_diego_apstats_expected_probabilities.csv
+outputs/scored_probabilities/uc_irvine_apstats_expected_probabilities.csv
+```
+
+## Bottom Line
+
+Favorable UC portal states are associated with stronger GPA profiles in this sample, especially for Berkeley and UCSD weighted GPA. UCSD and UCI favorable counts are close to AP Stats model expectations, while Berkeley's `Id` count is much larger than expected and should be interpreted cautiously. The evidence supports portal signals as noisy, campus-specific indicators, not as official or deterministic admission outcomes.
