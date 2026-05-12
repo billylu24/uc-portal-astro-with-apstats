@@ -635,4 +635,4 @@ python src/02_categorize_majors.py
 
 ## 中文结论
 
-在这个样本中，favorable UC portal states 与更强的 GPA profile 有一致关系，尤其体现在 Berkeley 和 UCSD 的 weighted GPA 上。UCSD 和 UCI 的 favorable count 与 AP Stats 模型预期接近；Berkeley 的 `Id` count 明显高于模型预期，因此需要谨慎解释。整体证据支持 portal signal 是有噪声、分学校而异的弱到中等信息信号，而不是官方录取结果或确定性预测规则。
+在这个样本中，favorable UC portal states 与更强的 GPA profile 有一致关系，尤其体现在 Berkeley 和 UCSD 的 weighted GPA 上。UCSD 和 UCI 的 favorable count 与 AP Stats 模型预期接近；Berkeley 的 `Id` count 明显高于模型预期，因此需要谨慎解释。整体证据支持 portal signal 是有噪声、分学校而异的弱到中等信息信号，而不是官方录取结果或确定性预测规则。-Billy
